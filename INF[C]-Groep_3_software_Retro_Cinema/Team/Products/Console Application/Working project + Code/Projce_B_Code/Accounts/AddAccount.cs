@@ -18,7 +18,12 @@ public static class AddAccount
 
     public static (string, string) MakeAccount()
     {
-        string[] JaOfNee = ["Ja", "Nee"];
+        Console.WriteLine("De Terms en Conditions zijn als volgt:\nDoor gebruik te maken van deze dienst gaat u akkoord met deze Algemene Voorwaarden.\nIndien u niet akkoord gaat met deze voorwaarden, dient u geen gebruik te maken van de dienst.");
+        Console.WriteLine("Druk op een knop om verder te gaan");
+        Console.ReadKey(true);
+        Console.WriteLine("Accepteert u de Terms en Conditions? ");
+
+        string[] JaOfNee = new string[] { "Ja", "Nee" };
         int CurrentOption = 0;
 
 
